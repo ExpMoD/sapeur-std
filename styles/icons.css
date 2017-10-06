@@ -1,0 +1,870 @@
+#game-screen {
+  background-color: #c0c0c0;
+}
+.zoom-100 .icon {
+  display: block;
+  float: left;
+  font-size: 0;
+  line-height: 0;
+  cursor: default;
+}
+.zoom-100 .icon-numb-NaN {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: 0px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-numb-0 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: 0px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-numb-1 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -13px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-numb-2 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -26px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-numb-3 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -39px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-numb-4 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -52px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-numb-5 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -65px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-numb-6 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -78px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-numb-7 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -91px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-numb-8 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -104px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-numb-9 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -117px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-numb-minus {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -130px 0px;
+  width: 13px;
+  height: 23px;
+}
+.zoom-100 .icon-open-0 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: 0px -23px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-open-1 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -16px -23px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-open-2 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -32px -23px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-open-3 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -48px -23px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-open-4 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -64px -23px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-open-5 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -80px -23px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-open-6 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -96px -23px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-open-7 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -112px -23px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-open-8 {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -128px -23px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-blank-pressed {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: 0px -23px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-blank {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: 0px -39px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-bombflagged {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -16px -39px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-bombdeath {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -32px -39px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-bombmisflagged {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -48px -39px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-bombrevealed {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -64px -39px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-question {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -80px -39px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-questionpressed {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -96px -39px;
+  width: 16px;
+  height: 16px;
+}
+.zoom-100 .icon-facesmile {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: 0px -55px;
+  width: 26px;
+  height: 26px;
+}
+.zoom-100 .icon-facepressed {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -26px -55px;
+  width: 26px;
+  height: 26px;
+}
+.zoom-100 .icon-faceooh {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -52px -55px;
+  width: 26px;
+  height: 26px;
+}
+.zoom-100 .icon-facedead {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -78px -55px;
+  width: 26px;
+  height: 26px;
+}
+.zoom-100 .icon-facewin {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -104px -55px;
+  width: 26px;
+  height: 26px;
+}
+.zoom-100 .icon-bordertb {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -40px -81px;
+  width: 16px;
+  height: 10px;
+}
+.zoom-100 .icon-borderlr {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -134px -39px;
+  width: 10px;
+  height: 16px;
+}
+.zoom-100 .icon-borderlrlong {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -134px -39px;
+  width: 10px;
+  height: 32px;
+}
+.zoom-100 .icon-bordertl {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: 0px -81px;
+  width: 10px;
+  height: 10px;
+}
+.zoom-100 .icon-bordertr {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -10px -81px;
+  width: 10px;
+  height: 10px;
+}
+.zoom-100 .icon-borderbl {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -20px -81px;
+  width: 10px;
+  height: 10px;
+}
+.zoom-100 .icon-borderbr {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -30px -81px;
+  width: 10px;
+  height: 10px;
+}
+.zoom-100 .icon-border-jointl {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -56px -81px;
+  width: 10px;
+  height: 10px;
+}
+.zoom-100 .icon-border-jointr {
+  background-image: url("../img/gameSprite100.gif");
+  background-position: -66px -81px;
+  width: 10px;
+  height: 10px;
+}
+.zoom-100 #mines-ones {
+  margin: 4px 0px 5px 0px;
+}
+.zoom-100 #seconds-ones {
+  margin: 4px 6px 5px 0px;
+  color: #f00;
+}
+.zoom-100 #mines-tens {
+  margin: 4px 0px 5px 0px;
+}
+.zoom-100 #seconds-tens {
+  margin: 4px 0px 3px 0px;
+  color: #f00;
+}
+.zoom-100 #mines-hundreds {
+  margin: 4px 0px 5px 6px;
+}
+.zoom-100 #seconds-hundreds {
+  margin: 4px 0px 3px 0px;
+  color: #f00;
+}
+.zoom-100 #face {
+  margin: 3px 0px 3px 0px;
+}
+.zoom-150 .icon {
+  display: block;
+  float: left;
+  font-size: 0;
+  line-height: 0;
+  cursor: default;
+}
+.zoom-150 .icon-numb-NaN {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: 0px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-numb-0 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: 0px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-numb-1 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -20px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-numb-2 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -39px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-numb-3 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -59px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-numb-4 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -78px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-numb-5 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -98px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-numb-6 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -117px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-numb-7 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -137px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-numb-8 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -156px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-numb-9 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -176px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-numb-minus {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -195px 0px;
+  width: 20px;
+  height: 35px;
+}
+.zoom-150 .icon-open-0 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: 0px -35px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-open-1 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -24px -35px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-open-2 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -48px -35px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-open-3 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -72px -35px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-open-4 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -96px -35px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-open-5 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -120px -35px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-open-6 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -144px -35px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-open-7 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -168px -35px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-open-8 {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -192px -35px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-blank-pressed {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: 0px -35px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-blank {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: 0px -59px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-bombflagged {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -24px -59px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-bombdeath {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -48px -59px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-bombmisflagged {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -72px -59px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-bombrevealed {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -96px -59px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-question {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -120px -59px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-questionpressed {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -144px -59px;
+  width: 24px;
+  height: 24px;
+}
+.zoom-150 .icon-facesmile {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: 0px -83px;
+  width: 39px;
+  height: 39px;
+}
+.zoom-150 .icon-facepressed {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -39px -83px;
+  width: 39px;
+  height: 39px;
+}
+.zoom-150 .icon-faceooh {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -78px -83px;
+  width: 39px;
+  height: 39px;
+}
+.zoom-150 .icon-facedead {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -117px -83px;
+  width: 39px;
+  height: 39px;
+}
+.zoom-150 .icon-facewin {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -156px -83px;
+  width: 39px;
+  height: 39px;
+}
+.zoom-150 .icon-bordertb {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -60px -122px;
+  width: 24px;
+  height: 15px;
+}
+.zoom-150 .icon-borderlr {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -201px -59px;
+  width: 15px;
+  height: 24px;
+}
+.zoom-150 .icon-borderlrlong {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -201px -59px;
+  width: 15px;
+  height: 48px;
+}
+.zoom-150 .icon-bordertl {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: 0px -122px;
+  width: 15px;
+  height: 15px;
+}
+.zoom-150 .icon-bordertr {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -15px -122px;
+  width: 15px;
+  height: 15px;
+}
+.zoom-150 .icon-borderbl {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -30px -122px;
+  width: 15px;
+  height: 15px;
+}
+.zoom-150 .icon-borderbr {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -45px -122px;
+  width: 15px;
+  height: 15px;
+}
+.zoom-150 .icon-border-jointl {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -84px -122px;
+  width: 15px;
+  height: 15px;
+}
+.zoom-150 .icon-border-jointr {
+  background-image: url("../img/gameSprite150.gif");
+  background-position: -99px -122px;
+  width: 15px;
+  height: 15px;
+}
+.zoom-150 #mines-ones {
+  margin: 6px 0px 7px 0px;
+}
+.zoom-150 #seconds-ones {
+  margin: 6px 9px 7px 0px;
+  color: #f00;
+}
+.zoom-150 #mines-tens {
+  margin: 6px 0px 7px 0px;
+}
+.zoom-150 #seconds-tens {
+  margin: 6px 0px 4px 0px;
+  color: #f00;
+}
+.zoom-150 #mines-hundreds {
+  margin: 6px 0px 7px 9px;
+}
+.zoom-150 #seconds-hundreds {
+  margin: 6px 0px 4px 0px;
+  color: #f00;
+}
+.zoom-150 #face {
+  margin: 4px 0px 4px 0px;
+}
+.zoom-200 .icon {
+  display: block;
+  float: left;
+  font-size: 0;
+  line-height: 0;
+  cursor: default;
+}
+.zoom-200 .icon-numb-NaN {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: 0px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-numb-0 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: 0px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-numb-1 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -26px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-numb-2 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -52px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-numb-3 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -78px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-numb-4 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -104px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-numb-5 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -130px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-numb-6 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -156px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-numb-7 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -182px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-numb-8 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -208px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-numb-9 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -234px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-numb-minus {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -260px 0px;
+  width: 26px;
+  height: 46px;
+}
+.zoom-200 .icon-open-0 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: 0px -46px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-open-1 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -32px -46px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-open-2 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -64px -46px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-open-3 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -96px -46px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-open-4 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -128px -46px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-open-5 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -160px -46px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-open-6 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -192px -46px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-open-7 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -224px -46px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-open-8 {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -256px -46px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-blank-pressed {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: 0px -46px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-blank {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: 0px -78px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-bombflagged {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -32px -78px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-bombdeath {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -64px -78px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-bombmisflagged {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -96px -78px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-bombrevealed {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -128px -78px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-question {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -160px -78px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-questionpressed {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -192px -78px;
+  width: 32px;
+  height: 32px;
+}
+.zoom-200 .icon-facesmile {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: 0px -110px;
+  width: 52px;
+  height: 52px;
+}
+.zoom-200 .icon-facepressed {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -52px -110px;
+  width: 52px;
+  height: 52px;
+}
+.zoom-200 .icon-faceooh {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -104px -110px;
+  width: 52px;
+  height: 52px;
+}
+.zoom-200 .icon-facedead {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -156px -110px;
+  width: 52px;
+  height: 52px;
+}
+.zoom-200 .icon-facewin {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -208px -110px;
+  width: 52px;
+  height: 52px;
+}
+.zoom-200 .icon-bordertb {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -80px -162px;
+  width: 32px;
+  height: 20px;
+}
+.zoom-200 .icon-borderlr {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -268px -78px;
+  width: 20px;
+  height: 32px;
+}
+.zoom-200 .icon-borderlrlong {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -268px -78px;
+  width: 20px;
+  height: 64px;
+}
+.zoom-200 .icon-bordertl {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: 0px -162px;
+  width: 20px;
+  height: 20px;
+}
+.zoom-200 .icon-bordertr {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -20px -162px;
+  width: 20px;
+  height: 20px;
+}
+.zoom-200 .icon-borderbl {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -40px -162px;
+  width: 20px;
+  height: 20px;
+}
+.zoom-200 .icon-borderbr {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -60px -162px;
+  width: 20px;
+  height: 20px;
+}
+.zoom-200 .icon-border-jointl {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -112px -162px;
+  width: 20px;
+  height: 20px;
+}
+.zoom-200 .icon-border-jointr {
+  background-image: url("../img/gameSprite200.gif");
+  background-position: -132px -162px;
+  width: 20px;
+  height: 20px;
+}
+.zoom-200 #mines-ones {
+  margin: 8px 0px 10px 0px;
+}
+.zoom-200 #seconds-ones {
+  margin: 8px 12px 10px 0px;
+  color: #f00;
+}
+.zoom-200 #mines-tens {
+  margin: 8px 0px 10px 0px;
+}
+.zoom-200 #seconds-tens {
+  margin: 8px 0px 6px 0px;
+  color: #f00;
+}
+.zoom-200 #mines-hundreds {
+  margin: 8px 0px 10px 12px;
+}
+.zoom-200 #seconds-hundreds {
+  margin: 8px 0px 6px 0px;
+  color: #f00;
+}
+.zoom-200 #face {
+  margin: 6px 0px 6px 0px;
+}

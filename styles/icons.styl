@@ -1,0 +1,84 @@
+// Created by Andrey on 03.10.2017.
+
+sprite(x, y, widthS, heightS, zoom)
+	background-image: url('../img/gameSprite' + zoom + '.gif')
+	background-position: unit(floor(x*(zoom/100)), px) unit(floor(y*(zoom/100)), px)
+	width: unit(ceil(widthS*(zoom/100)), px)
+	height: unit(ceil(heightS*(zoom/100)), px)
+
+
+headerNumbs(a, b, c, d, zoom)
+	margin unit(floor(a*(zoom/100)), px) unit(floor(b*(zoom/100)), px) unit(floor(c*(zoom/100)), px) unit(floor(d*(zoom/100)), px)
+
+
+
+
+#game-screen
+	background-color: #C0C0C0
+
+
+.zoom
+	for zoom in 100 150 200
+		&\-{zoom}
+			& .icon
+				display block
+				float: left
+				font-size: 0
+				line-height: 0
+				cursor: default
+
+				&-numb
+					&-NaN
+						sprite(0, 0, 13, 23, zoom)
+					for item, i in 0 1 2 3 4 5 6 7 8 9 minus
+						&\-{item}
+							sprite((i*13*-1), 0, 13, 23, zoom)
+				&-open
+					for i in (0..8)
+						&\-{i}
+							sprite((i*16*-1), -23, 16, 16, zoom)
+				&-blank-pressed
+					sprite(0, -23, 16, 16, zoom)
+				for item, i in blank bombflagged bombdeath bombmisflagged bombrevealed question questionpressed
+					&\-{item}
+						sprite((i*16*-1), -39, 16, 16, zoom)
+
+				for item, i in facesmile facepressed faceooh facedead facewin
+					&\-{item}
+						sprite((i*26*-1), -55, 26, 26, zoom)
+
+				&-border
+					&tb
+						sprite(-40, -81, 16, 10, zoom)
+
+					&lr
+						sprite(-134, -39, 10, 16, zoom)
+
+					&lrlong
+						sprite(-134, -39, 10, 32, zoom)
+
+					for item, i in tl tr bl br
+						&{item}
+							sprite((i*10*-1), -81, 10, 10, zoom)
+
+					&-jointl
+						sprite(-56, -81, 10, 10, zoom)
+					&-jointr
+						sprite(-66, -81, 10, 10, zoom)
+		
+			for item, i in ones tens hundreds
+				& #mines-{item}
+					if i == 2
+						headerNumbs(4, 0, 5, 6, zoom)
+					else
+						headerNumbs(4, 0, 5, 0, zoom)
+
+				& #seconds-{item}
+					if i == 0
+						headerNumbs(4, 6, 5, 0, zoom)
+					else
+						headerNumbs(4, 0, 3, 0, zoom)
+					color #f00
+
+			& #face
+				headerNumbs(3,0,3,0, zoom)
