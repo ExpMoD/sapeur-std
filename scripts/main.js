@@ -515,9 +515,43 @@
 
   game = new Game();
 
-  game.loadSettings({
-    zoom: 200
+  $('a.toggle-settings').click(function() {
+    return $('#settingsModal').simplePopup();
   });
+
+  $('a.toggle-display').click(function() {
+    return $('#displayModal').simplePopup();
+  });
+
+  $('#height-game-map').slider({
+    min: 0,
+    max: 104,
+    value: 1,
+    animate: true
+  }).slider("pips", {
+    rest: "label",
+    step: 8
+  });
+
+  $('#width-game-map').slider({
+    min: 0,
+    max: 104,
+    value: 1,
+    animate: true
+  }).slider("pips", {
+    rest: "label",
+    step: 8
+  });
+
+  $('#mines-game-map').slider({
+    min: 0,
+    max: 1000,
+    value: 1,
+    animate: true
+  }).slider("pips", {
+    rest: "label",
+    step: 100
+  }).slider("float");
 
 }).call(this);
 

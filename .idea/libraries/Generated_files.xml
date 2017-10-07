@@ -3,12 +3,14 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/scripts/main.js" />
-        <item url="file://$PROJECT_DIR$/libs/HelpLib.js" />
+        <item url="file://$PROJECT_DIR$/libs/help.lib.js" />
+        <item url="file://$PROJECT_DIR$/libs/popup.exp.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/scripts/main.js" />
       <root url="file://$PROJECT_DIR$/libs/help.lib.js" />
+      <root url="file://$PROJECT_DIR$/libs/popup.exp.js" />
     </CLASSES>
     <SOURCES />
   </library>

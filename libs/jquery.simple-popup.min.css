@@ -1,0 +1,59 @@
+.simplePopup {
+	display: none;
+
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	-webkit-transform: translate(-50%, -50%); /* Safari <= 8.1 :-( */
+	-ms-transform: translate(-50%, -50%); /* Bloody IE9 */
+	transform: translate(-50%, -50%);
+	max-height: 80%;
+	max-width: 100%;
+	z-index: 100002;
+	padding: 30px 40px;
+	overflow: auto;
+
+	background: #fff;
+	z-index: 10001;
+	width: 400px;
+	height: 200px;
+}
+
+.simplePopup-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.simplePopup-close::before {
+	display: inline-block;
+	text-align: center;
+	content: "\00d7";
+	font-size: 40px;
+	color: lightgrey;
+	width: 40px;
+	line-height: 40px;
+}
+
+.simplePopup-close:hover {
+	cursor: hand;
+	cursor: pointer;
+}
+
+.simplePopup-close:hover::before {
+	color: grey;
+}
+
+
+
+.simplePopupBackground {
+	display: none;
+	background: #000;
+	position: fixed;
+	height: 100%;
+
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+}
