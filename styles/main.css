@@ -30,7 +30,8 @@ body {
   margin-bottom: 10px;
   font-family: Calibri;
 }
-.control-buttons a {
+.control-buttons a,
+.control-buttons button {
   display: inline-block;
   text-decoration: none;
   color: #000;
@@ -43,9 +44,46 @@ body {
   border-radius: 3px;
   width: 120px;
 }
-.control-buttons a:hover {
+.control-buttons a:hover,
+.control-buttons button:hover {
   background-color: #e7e7e7;
 }
-.control-buttons a:active {
+.control-buttons a:active,
+.control-buttons button:active {
   background-color: #ffb7bc;
+}
+#settingsModal {
+  font-family: "Calibri Light";
+}
+#settingsModal tr,
+#settingsModal td {
+  height: 35px;
+}
+#settingsModal input[type=radio] {
+  margin-right: 10px;
+}
+#settingsModal .set-state {
+  width: 120px;
+}
+#settingsModal .set-height,
+#settingsModal .set-width,
+#settingsModal .set-mines {
+  width: 70px;
+}
+#settingsModal #dif-special input[type=text] {
+  width: 35px;
+}
+#displayModal {
+  font-family: "Calibri Light";
+}
+#displayModal tr,
+#displayModal td {
+  height: 35px;
+}
+#rulesModal {
+  font-family: "Calibri Light";
+}
+#rulesModal li {
+  margin-bottom: 5px;
+  text-align: justify;
 }

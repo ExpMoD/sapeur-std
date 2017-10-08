@@ -11,26 +11,18 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/icons.css">
 	<link rel="stylesheet" href="libs/jquery.simple-popup.min.css">
-	<link rel="stylesheet" href="libs/jquery.simple-popup.settings.css">
-	<link rel="stylesheet" href="libs/jquery-ui.min.css">
-	<link rel="stylesheet" href="libs/jquery-ui.structure.min.css">
-	<link rel="stylesheet" href="libs/jquery-ui.theme.min.css">
-	<link rel="stylesheet" href="libs/jquery-ui-slider-pips.css">
 
 
 	<script type="text/javascript" src="libs/js.cookie.js"></script>
 	<script type="text/javascript" src="libs/jquery.js"></script>
 	<script type="text/javascript" src="libs/help.lib.js"></script>
-	<script type="text/javascript" src="libs/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="libs/jquery-ui-slider-pips.js"></script>
-
 	<script type="text/javascript" src="libs/jquery.simple-popup.min.js"></script>
 
 </head>
 <body>
 	<div class="page">
 		<div class="wrapper">
-			<div class="control-buttons"><a class="toggle-settings" href="#">Настройки</a> <a class="toggle-display" href="#">Отображение</a></div>
+			<div class="control-buttons"><a class="toggle-settings" href="#">Настройки</a> <a class="toggle-display" href="#">Отображение</a> <a class="toggle-rules" href="#">Правила</a></div>
 			<div id="zoom" class="zoom-200">
 				<div id="game-screen" oncontextmenu="return false;" ondrag="return false;" ondragstart="return false;">
 					<div class="icon icon-open-5"></div>
@@ -43,17 +35,70 @@
 	</div>
 
 	<div id="settingsModal" class="simplePopup">
-		<div style="margin-bottom: 10px;">Высота поля:</div>
-		<div id="height-game-map"></div>
-		<div style="margin-bottom: 10px;">Ширина поля:</div>
-		<div id="width-game-map"></div>
-		<div style="margin-bottom: 10px;">Количество мин:</div>
-		<div id="mines-game-map"></div>
+		<table>
+			<tr>
+				<td class="set-state"></td>
+				<td class="set-height">Высота</td>
+				<td class="set-width">Ширина</td>
+				<td class="set-mines">Мины</td>
+			</tr>
+			<tr id="dif-beginner">
+				<td class="set-state"><input id="dif-level-beginner" name="div-level" type="radio"><label for="dif-level-beginner"><b>Новичок</b></label></td>
+				<td class="set-height">9</td>
+				<td class="set-width">9</td>
+				<td class="set-mines">10</td>
+			</tr>
+			<tr id="dif-lover">
+				<td class="set-state"><input id="dif-level-lover" name="div-level" type="radio"><label for="dif-level-lover"><b>Любитель</b></label></td>
+				<td class="set-height">16</td>
+				<td class="set-width">16</td>
+				<td class="set-mines">40</td>
+			</tr>
+			<tr id="dif-expert">
+				<td class="set-state"><input id="dif-level-expert" name="div-level" type="radio" checked><label for="dif-level-expert"><b>Эксперт</b></label></td>
+				<td class="set-height">16</td>
+				<td class="set-width">30</td>
+				<td class="set-mines">99</td>
+			</tr>
+			<tr id="dif-special">
+				<td class="set-state"><input id="dif-level-special" name="div-level" type="radio"><label for="dif-level-special">Особый</label></td>
+				<td class="set-height"><input id="special-height" type="text" value="20"></td>
+				<td class="set-width"><input id="special-width" type="text" value="30"></td>
+				<td class="set-mines"><input id="special-mines" type="text" value="145"></td>
+			</tr>
+		</table>
+		<div class="control-buttons">
+			<a id="load-new-settings" href="#" class="start-new-game">Новая игра</a>
+		</div>
 	</div>
 
 
 	<div id="displayModal" class="simplePopup">
-		dispay
+		<table>
+			<tr>
+				<td colspan="3" align="center"><b>Увеличение</b></td>
+			</tr>
+			<tr>
+				<td><input id="zoom-100" name="zoom" type="radio" value="100" checked> <label for="zoom-100">100%</label></td>
+				<td><input id="zoom-150" name="zoom" type="radio" value="150"> <label for="zoom-150">150%</label></td>
+				<td><input id="zoom-200" name="zoom" type="radio" value="200"> <label for="zoom-200">200%</label></td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="rulesModal" class="simplePopup" style="width: 500px; top:50%;">
+		<h3>Игра "сапёр" очень проста.</h3>
+		<h4>Начните с открытия одной ячейки.</h4>
+		<ul>
+			<li>Число в ячейке показывает, сколько мин скрыто вокруг данной ячейки . Это число поможет понять вам, где находятся безопасные ячейки, а где находятся бомбы.</li>
+			<li>Если рядом с открытой ячейкой есть пустая ячейка, то она откроется автоматически.</li>
+			<li>Если вы открыли ячейку с миной, то игра проиграна..</li>
+			<li>Что бы пометить ячейку, в которой находится бомба, нажмите её правой кнопкой мыши.</li>
+			<li>После того, как вы отметите все мины, можно навести курсор на открытую ячейку и нажать правую и левую кнопку мыши одновременно. Тогда откроются все свободные ячейки вокруг неё</li>
+			<li>Если в ячейке указано число, оно показывает, сколько мин скрыто в восьми ячейках вокруг данной. Это число помогает понять, где находятся безопасные ячейки.</li>
+			<li>Игра продолжается до тех пор, пока вы не откроете все не заминированные ячейки.</li>
+		</ul>
+
 	</div>
 
 	<script type="text/javascript" src="scripts/main.js"></script>

@@ -7,6 +7,22 @@ settings =
 	mines: 99
 	zoom: 100
 
+
+difficulty =
+	beginner:
+		sizeY: 9
+		sizeX: 9
+		mines: 10
+	lover:
+		sizeY: 16
+		sizeX: 16
+		mines: 40
+	expert:
+		sizeY: 16
+		sizeX: 30
+		mines: 99
+
+
 class Vector2
 	constructor: (@x, @y) ->
 
@@ -26,12 +42,21 @@ class Game
 			@sizeY = InputSettings.sizeY or settings.sizeY
 			@mines = InputSettings.mines or settings.mines
 			@zoom = InputSettings.zoom or settings.zoom
+
+
+			if @sizeX < 8 then @sizeX = 8
+			if @sizeY < 5 then @sizeY = 5
+
+			if @mines > (@sizeX * @sizeY) then @mines = @sizeX * @sizeY
+
 			@resizeBorder()
 			return true
 		return false
 
 	generateMap: (excluding = new Vector2(-1,-1), callback = ->) ->
+		@destroy()
 		generatingMap = []
+
 
 		if @sizeX? and @sizeY? and @mines?
 			halfCells = (@sizeX * @sizeY)/2
@@ -206,11 +231,11 @@ class Game
 
 	openCell: (Py, Px) ->
 		if !@gameStarted
+			#if @map[Py][Px] then @generateMap(new Vector2(Px, Py), ((__this) -> __this.openCell(Py, Px)))
+			#else
 			@gameStarted = true
-			if @map[Py][Px] then @generateMap(new Vector2(Px, Py), ((__this) -> __this.openCell(Py, Px); __this.startTimer()))
-			else
-				@openCell(Py, Px)
-				@startTimer()
+			@startTimer()
+			@openCell(Py, Px)
 		else
 			if @map[Py][Px]
 				@loseGame(new Vector2(Px, Py))
@@ -377,38 +402,35 @@ $('a.toggle-settings').click () ->
 $('a.toggle-display').click () ->
 	$('#displayModal').simplePopup()
 
+$('a.toggle-rules').click () ->
+	$('#rulesModal').simplePopup()
 
 
-$('#height-game-map').slider(
-		min: 0
-		max: 104
-		value: 1
-		animate:true
-	).slider("pips",
-		rest: "label"
-		step: 8
-	)
+$('#load-new-settings').click () ->
+	if $('#dif-level-beginner').is(":checked")
+		game.loadSettings difficulty.beginner
+		game.generateMap()
+	else if $('#dif-level-lover').is(":checked")
+		game.loadSettings difficulty.lover
+		game.generateMap()
+	else if $('#dif-level-expert').is(":checked")
+		game.loadSettings difficulty.expert
+		game.generateMap()
+	else if $('#dif-level-special').is(":checked")
+		specialDif =
+			sizeY: Number($('#special-height').val()) or 20
+			sizeX: Number($('#special-width').val()) or 40
+			mines: Number($('#special-mines').val()) or 145
 
-$('#width-game-map').slider(
-		min: 0
-		max: 104
-		value: 1
-		animate:true
-	).slider("pips",
-		rest: "label"
-		step: 8
-	)
+		game.loadSettings specialDif
+		game.generateMap()
+
+$('[name=zoom]').change () ->
+	if @value == "100" or @value == "150" or @value == "200"
+		game.loadSettings {zoom: Number(@value)}
 
 
-$('#mines-game-map').slider(
-		min: 0
-		max: 1000
-		value: 1
-		animate:true
-	).slider("pips",
-		rest: "label"
-		step: 100
-	).slider("float")
-
+$('#special-height, #special-width, #special-mines').focus () ->
+	$('#dif-level-special').prop 'checked', true
 
 #game.loadSettings({sizeY: 5, sizeX: 5})
