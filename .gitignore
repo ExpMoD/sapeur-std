@@ -2,4 +2,5 @@
 /scripts/main.js.map
 /libs/popup.exp.coffee
 /libs/popup.exp.styl
-/libs/help.lib.coffee
+.idea/fileTemplates/
+.idea/workspace.xml
