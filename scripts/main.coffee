@@ -82,7 +82,7 @@ class Game
 									generatingMap[pY][pX] = trueGen
 									placed = true
 
-					@map = generatingMap.slice(0);
+					@map = generatingMap.slice(0)
 					callback?(@)
 					@renderingMap()
 					return true
@@ -116,7 +116,7 @@ class Game
 	renderingMap: () ->
 		@gameScreen.html('')
 
-		htmlCode = '';
+		htmlCode = ''
 
 		iconGen = (iconName) ->
 			htmlCode += "<div class='icon icon-#{iconName}'></div>"
@@ -308,7 +308,7 @@ class Game
 				isFlagged = true
 				FlaggedIndex = index
 
-		element = $("[id='#{vector.y},#{vector.x}']");
+		element = $("[id='#{vector.y},#{vector.x}']")
 		if isFlagged
 			@flaggedCells.splice(FlaggedIndex, 1)
 			element.iconToggle("icon-blank")
@@ -383,11 +383,11 @@ class Game
 
 	destroy: ->
 		@gameStarted = false
-		$('.clickable').unbind('mouseenter').unbind('mouseleave').unbind('mousedown').unbind('mouseup');
+		$('.clickable').unbind('mouseenter').unbind('mouseleave').unbind('mousedown').unbind('mouseup')
 		clearInterval @timer
 
 
-game = new Game();
+game = new Game()
 
 
 #settingsModal = new popup_exp('#settingsModal')
